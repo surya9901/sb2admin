@@ -33,12 +33,12 @@ function Productcreate(props) {
                         <div className=" col-lg-6">
                             <label>Product Name</label>
                             <input type="text" value={productName}
-                                onChange={(e) => { setProductName(e.target.value) }} className="form-control" />
+                                onChange={(e) => { setProductName(e.target.value) }} className="form-control" required />
                         </div>
                         <div className=" col-lg-6">
                             <label>Price</label>
                             <input type="text" value={price}
-                                onChange={(e) => { setPrice(e.target.value) }} className="form-control" />
+                                onChange={(e) => { setPrice(e.target.value) }} className="form-control" required />
                         </div>
                         <div className=" col-lg-12 mt-3 text-center">
                             <input className="btn btn-primary" type="submit" value="Submit" disabled={isLoading} />
